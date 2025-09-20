@@ -1,0 +1,33 @@
+#include <iostream>
+
+int main() {
+
+	std::cout << "В данной программе посчитаем сколько необходимо барберов для работы\n";
+
+	int population;			//Колчество населеия
+	int barbers;			//Количество барберов которое работает
+	int clientsPerDay = 8;	//Сколько может обслужить один барбер в день
+	int daysInMonth = 30;	//Количество дей в месяце
+
+	std::cout << "Введите количество жителей города: ";
+	std::cin >> population;
+
+	std::cout << "Введите количество барберов: ";
+	std::cin >> barbers;
+
+	// Количество клиентов, которых может обслужить один барбер за месяц
+	int clientsPerMonth = clientsPerDay * daysInMonth;
+
+	// Общее количество клиентов, которых могут обслужить все барберы
+	int totalClients = barbers * clientsPerMonth;
+
+	std::cout << "Общее количество клиентов, которых могут обслужить все барберы: " << totalClients << "\n";
+	
+	if (population % totalClients == 0) {
+	} else if (population <= totalClients) {
+		std::cout << "Вам хватает барберов!";
+	}
+	else {
+		std::cout << "Вам не хватает барберов!";
+	}
+}
