@@ -2,6 +2,8 @@
 
 int main() {
 
+	setlocale(LC_ALL, "RU");
+
 	std::cout << "Эта программа проверяе, каке число Вы ввели, чёное и нечётное\n";
 
 	int number;
