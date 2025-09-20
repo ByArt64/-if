@@ -2,6 +2,8 @@
 
 int main() {
 
+	setlocale(LC_ALL, "RU");
+
 	std::cout << "Эта программа ищет минимальное значение из двух числе\n";
 
 	int firstNumber;
