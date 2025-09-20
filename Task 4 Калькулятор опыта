@@ -1,0 +1,29 @@
+#include <iostream>
+
+int main() {
+
+	std::cout << "Калькулятор опыта\n";
+
+	int numberExperiencePoints;
+
+	std::cout << "Введите число очков опыта: ";
+	std::cin >> numberExperiencePoints;
+
+	std::cout << "-----Считаем-----\n";
+
+	if (numberExperiencePoints >= 5000) {
+		std::cout << "Ваш уровень: 4";
+	}
+	else if (numberExperiencePoints >=2500){
+		std::cout << "Ваш уровень: 3";
+	}
+	else if (numberExperiencePoints >= 1000) {
+		std::cout << "Ваш уровень: 2";
+	}
+	else if (numberExperiencePoints >= 0) {
+		std::cout << "Ваш уровень: 1";
+	}
+	else {
+		std::cout << "Вы ввели непавильно значение!";
+	}
+}
