@@ -2,6 +2,8 @@
 
 int main() {
 
+    setlocale(LC_ALL, "RU");
+
     std::cout << "Прогрессивный налог.\n";
 
     int profit;
