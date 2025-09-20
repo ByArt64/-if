@@ -1,0 +1,46 @@
+#include <iostream>
+
+int main() {
+
+	setlocale(LC_ALL, "RU");
+
+	std::cout << "Программа, которая выводит меню бизнес-ланча ресторана в зависимости от дня недели.\n";
+
+	std::string monday = "Гороховый суп\nСалат «Цезарь» с креветками\nКуриная ножка с пюре\nМорс";
+	std::string tuesday = "Харчо\nСалат «Оливье»\nБаварские колбаски с капустой\nМорс";
+	std::string wednesday = "Борщ\nСалат «Крабовый»\nПаста\nМорс";
+	std::string thursday = "Солянка\nСалат «Из овощей»\nДраники\nМорс";
+	std::string friday = "Куриный суп\nСалат «Черепаха»\nЖареный катофель с котлетой\nМорс";
+	std::string saturday = "Рассольник\nСалат «Мимоза»\nШеф-гамбургер\nМорс";
+	std::string sunday = "Шаурма\nСалат из овощей а ггриле\nПельмени\nМорс";
+
+	int dayWeek;
+
+	std::cout << "Введите день недели (от 1 до 7) ";
+	std::cin >> dayWeek;
+
+	if (dayWeek == 1) {
+		std::cout << monday;
+	}
+	else if (dayWeek == 2) {
+		std::cout << tuesday;
+	}
+	else if (dayWeek == 3) {
+		std::cout << wednesday;
+	}
+	else if (dayWeek == 4) {
+		std::cout << thursday;
+	}
+	else if (dayWeek == 5) {
+		std::cout << friday;
+	}
+	else if (dayWeek == 6) {
+		std::cout << saturday;
+	}
+	else if (dayWeek == 7) {
+		std::cout << sunday;
+	}
+	else {
+		std::cout << "Вы ввели некорректное число!";
+	}
+}
