@@ -1,0 +1,27 @@
+#include <iostream>
+
+int main() {
+
+	std::cout << "Эта программа проверяет кратность числа\n";
+
+	int firstNumber;
+	int secondNumber;
+
+	std::cout << "Введите первое число: ";
+	std::cin >> firstNumber;
+
+	std::cout << "Введите второе число: ";
+	std::cin >> secondNumber;
+
+	std::cout << "-----Проверяем-----\n";
+
+	if (secondNumber == 0) {
+		std::cout << "На ноль делить нельзя!!!";
+	}
+	else if (firstNumber % secondNumber == 0) {
+		std::cout << "Да, " << firstNumber << " делится на " << secondNumber << " без остатка!";
+	}
+	else if (firstNumber % secondNumber != 0) {
+		std::cout << "Нет, " << firstNumber << " не делится на " << secondNumber << " без остатка!";
+	}
+}
