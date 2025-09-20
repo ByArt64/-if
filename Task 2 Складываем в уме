@@ -1,0 +1,28 @@
+#include <iostream>
+
+int main() {
+
+	std::cout << "Проверим как Вы умеете складывать в уме!\n";
+
+	int firstNumber;
+	int secondNumber;
+	int summNumber;
+
+	std::cout << "Введите первое число: ";
+	std::cin >> firstNumber;
+
+	std::cout << "Введите второе число: ";
+	std::cin >> secondNumber;
+
+	std::cout << "Введите первое число: ";
+	std::cin >> summNumber;
+
+	std::cout << "-----Проверяем-----\n";
+
+	if (firstNumber + secondNumber == summNumber) {
+		std::cout << "Верно!";
+	}
+	else {
+		std::cout << "Ошибка! Верный результат: " << firstNumber + secondNumber << "!";
+	}
+}
