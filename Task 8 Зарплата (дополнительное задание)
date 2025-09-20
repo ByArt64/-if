@@ -1,0 +1,61 @@
+/*Доброго времени суток Михаил!
+  Честно, не понял я как реализовать данную программу 
+  не используя логический опреатор && (И)*/
+
+#include <iostream>
+
+int main() {
+
+	setlocale(LC_ALL, "RU");
+
+	std::cout << "Зарплата.\n";
+
+	int salaryFirstWorker;
+	int salarySecondtWorker;
+	int salaryThirdWorker;
+
+	std::cout << "Введите зарплату 1-го сотрудника: ";
+	std::cin >> salaryFirstWorker;
+
+	std::cout << "Введите зарплату 2-го сотрудника: ";
+	std::cin >> salarySecondtWorker;
+
+	std::cout << "Введите зарплату 2-го сотрудника: ";
+	std::cin >> salaryThirdWorker;
+
+	std::cout << "-----Считаем-----\n";
+
+	int salaryAverage = (salaryFirstWorker + salarySecondtWorker + salaryThirdWorker) / 3;
+
+	int maxSalary;
+
+	if (salaryFirstWorker >= salarySecondtWorker && salaryFirstWorker >= salaryThirdWorker) {
+		std::cout << "Самая высокая зарплата в отделе: " << salaryFirstWorker << " рублей\n";
+		maxSalary = salaryFirstWorker;
+	}
+	else if (salarySecondtWorker >= salaryFirstWorker && salarySecondtWorker >= salaryThirdWorker) {
+		std::cout << "Самая высокая зарплата в отделе: " << salarySecondtWorker << " рублей\n";
+		maxSalary = salarySecondtWorker;
+	}
+	else {
+		std::cout << "Самая высокая зарплата в отделе: " << salaryThirdWorker << " рублей\n";
+		maxSalary = salaryThirdWorker;
+	}
+
+	int minSalary;
+
+	if (salaryFirstWorker <= salarySecondtWorker && salaryFirstWorker <= salaryThirdWorker) {
+		minSalary = salaryFirstWorker;
+	}
+	else if (salarySecondtWorker <= salaryFirstWorker && salarySecondtWorker <= salaryThirdWorker) {
+		minSalary = salarySecondtWorker;
+	}
+	else {
+		minSalary = salaryThirdWorker;
+	}
+
+	int differenceSalary = maxSalary - minSalary;
+
+	std::cout << "Разница между самой высокой и самой низкой зарплатой в отделе: " << differenceSalary << " рублей.\n";
+	std::cout << "Средняя зарплата в отделе: " << salaryAverage << " рублей.\n";
+}
