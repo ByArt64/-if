@@ -1,0 +1,27 @@
+#include <iostream>
+
+int main() {
+
+	std::cout << "Эта программа ищет минимальное значение из двух числе\n";
+
+	int firstNumber;
+	int secondNumber;
+
+	std::cout << "Введите первое число: ";
+	std::cin >> firstNumber;
+
+	std::cout << "Введите второе число: ";
+	std::cin >> secondNumber;
+
+	std::cout << "-----Проверяем-----\n";
+
+	if (firstNumber < secondNumber) {
+		std::cout << "Наименшее число: " << firstNumber;
+	}
+	else if (secondNumber < firstNumber) {
+		std::cout << "Наименшее число: " << secondNumber;
+	}
+	else if (firstNumber == secondNumber) {
+		std::cout << "Числа равны!";
+	}
+}
