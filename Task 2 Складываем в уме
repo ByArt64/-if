@@ -2,6 +2,8 @@
 
 int main() {
 
+	setlocale(LC_ALL, "RU");
+
 	std::cout << "Проверим как Вы умеете складывать в уме!\n";
 
 	int firstNumber;
